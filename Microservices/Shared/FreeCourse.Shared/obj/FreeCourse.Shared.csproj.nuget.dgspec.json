@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cihan\\Desktop\\GitHub\\microservices-dot-net\\Microservices\\Services\\Catalog\\FreeCourse.Services.Catalog\\FreeCourse.Services.Catalog.csproj": {}
+    "C:\\Users\\cihan\\Desktop\\GitHub\\microservices-dot-net\\Microservices\\Shared\\FreeCourse.Shared\\FreeCourse.Shared.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cihan\\Desktop\\GitHub\\microservices-dot-net\\Microservices\\Services\\Catalog\\FreeCourse.Services.Catalog\\FreeCourse.Services.Catalog.csproj": {
+    "C:\\Users\\cihan\\Desktop\\GitHub\\microservices-dot-net\\Microservices\\Shared\\FreeCourse.Shared\\FreeCourse.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cihan\\Desktop\\GitHub\\microservices-dot-net\\Microservices\\Services\\Catalog\\FreeCourse.Services.Catalog\\FreeCourse.Services.Catalog.csproj",
-        "projectName": "FreeCourse.Services.Catalog",
-        "projectPath": "C:\\Users\\cihan\\Desktop\\GitHub\\microservices-dot-net\\Microservices\\Services\\Catalog\\FreeCourse.Services.Catalog\\FreeCourse.Services.Catalog.csproj",
+        "projectUniqueName": "C:\\Users\\cihan\\Desktop\\GitHub\\microservices-dot-net\\Microservices\\Shared\\FreeCourse.Shared\\FreeCourse.Shared.csproj",
+        "projectName": "FreeCourse.Shared",
+        "projectPath": "C:\\Users\\cihan\\Desktop\\GitHub\\microservices-dot-net\\Microservices\\Shared\\FreeCourse.Shared\\FreeCourse.Shared.csproj",
         "packagesPath": "C:\\Users\\cihan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cihan\\Desktop\\GitHub\\microservices-dot-net\\Microservices\\Services\\Catalog\\FreeCourse.Services.Catalog\\obj\\",
+        "outputPath": "C:\\Users\\cihan\\Desktop\\GitHub\\microservices-dot-net\\Microservices\\Shared\\FreeCourse.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -47,20 +47,6 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "dependencies": {
-            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
-              "target": "Package",
-              "version": "[12.0.0, )"
-            },
-            "MongoDB.Driver": {
-              "target": "Package",
-              "version": "[2.17.1, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.4.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -73,9 +59,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

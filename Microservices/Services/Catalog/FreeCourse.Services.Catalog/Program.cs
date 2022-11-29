@@ -1,17 +1,42 @@
+using FreeCourse.Services.Catalog.Settings;
+using Microsoft.Extensions.Options;
+using System.Collections;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+//Add AutoMapper
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+builder.Services.Configure<DatabaseSettings>(builder.Configuration.GetSection("DatabaseSettings"));
+//builder.Services.AddSingleton<IDatabaseSettings>(sp =>
+//{
+//    return sp.GetRequiredService<IOptions<DatabaseSettings>>().Value;
+//});
+
 
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
+    
     app.UseSwagger();
     app.UseSwaggerUI();
+    //string a = null;
+    //string b = a ?? "selam";
+
+    //int? aa = null;
+    //int bbb = aa ?? 5;
+    //ArrayList dd =null;
+
+    //ArrayList myAL = new ArrayList();
+    //myAL.Add("Hello");
+    //myAL.Add("World");
+    //myAL.Add("!");
 }
 
 app.UseHttpsRedirection();
@@ -37,7 +62,10 @@ app.MapGet("/weatherforecast", () =>
 
 app.Run();
 
+
+
 internal record WeatherForecast(DateTime Date, int TemperatureC, string? Summary)
 {
     public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+
 }
